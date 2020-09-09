@@ -1,0 +1,13 @@
+{
+  "contexts": {
+    "default": {
+      "env": {
+          "METAFLOW_DEFAULT_DATASTORE": "local",
+          "METAFLOW_DEFAULT_METADATA": "local"
+      },
+      "args": [
+          "--event-logger=debugLogger",
+      ]
+    }
+  }
+}
