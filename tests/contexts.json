@@ -6,7 +6,7 @@
           "METAFLOW_DEFAULT_METADATA": "local"
       },
       "args": [
-          "--event-logger=debugLogger",
+          "--event-logger=debugLogger"
       ]
     }
   }

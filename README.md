@@ -30,3 +30,9 @@ Run flow:
 ```bash
 $ python flow.py run
 ```
+
+Run Tests:
+
+```bash
+$ python tests/run_tests.py
+```

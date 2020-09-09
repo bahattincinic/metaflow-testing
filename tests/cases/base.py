@@ -7,8 +7,7 @@ from os.path import abspath, dirname, join
 
 from metaflow import Run, Step
 
-BASE_DIR = dirname(dirname(dirname(abspath(__file__))))
-APP_DIR = join(BASE_DIR, 'metaflow-testing')
+APP_DIR = dirname(dirname(dirname(abspath(__file__))))
 TESTS_DIR = join(APP_DIR, 'tests')
 
 
@@ -38,14 +37,14 @@ class BaseTestCase(unittest.TestCase):
 
         subprocess.check_call(" ".join(cmd),
                               env=env,
-                              cwd=BASE_DIR,
+                              cwd=APP_DIR,
                               shell=True)
 
-        with open(join(BASE_DIR, run_id_file)) as f:
+        with open(join(APP_DIR, run_id_file)) as f:
             run_id = f.read()
 
         # cleanup Metaflow run_id file
-        os.remove(join(BASE_DIR, run_id_file))
+        os.remove(join(APP_DIR, run_id_file))
 
         return Run(f"{flow_name}/{run_id}")
 
