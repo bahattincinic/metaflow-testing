@@ -1,5 +1,6 @@
-from .base import BaseTestCase
 from data import CARS
+
+from .base import BaseTestCase
 
 
 class FlowTestCases(BaseTestCase):

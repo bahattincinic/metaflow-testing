@@ -2,12 +2,13 @@ import logging
 import os
 import sys
 
-if os.getcwd() not in sys.path:
-    sys.path.insert(0, os.getcwd())
-
 from metaflow import FlowSpec, step
 
 from data import CARS
+
+
+if os.getcwd() not in sys.path:
+    sys.path.insert(0, os.getcwd())
 
 
 class ExampleFlow(FlowSpec):

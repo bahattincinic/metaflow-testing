@@ -7,6 +7,7 @@ from os.path import abspath, dirname, join
 
 from metaflow import Run, Step
 
+
 APP_DIR = dirname(dirname(dirname(abspath(__file__))))
 TESTS_DIR = join(APP_DIR, 'tests')
 
